@@ -22,8 +22,8 @@
             <p>Introduce los datos solicitados</p>
             <div>
             <form action="#" th:action="@{/resultado}" th:object="${calcu}" method="post">
-                 <p>Primer Numero: <input type="number" th:field="*{Num1}" class="form-control" /></p>
-                 <p>Segundo Numero: <input type="number" th:field="*{Num2}" class="form-control" /></p>
+                 <p>Primer Numero: <input type="number" th:field="*{num1}" class="form-control" /></p>
+                 <p>Segundo Numero: <input type="number" th:field="*{num2}" class="form-control" /></p>
                  <p>
                  Operacion:
                  <select th:field="*{operador}" class="form-control">
@@ -33,7 +33,7 @@
                  <option value="/">Division (/)</option>
                  </select>
                  </p>
-                 <label class="text-center" th:text="'Resultado de '+ *{Num1}+ *{operador}+ *{Num2}+ '=' + *{res}"></label>
+                 <label class="text-center" th:text="'Resultado de '+ *{num1}+ *{operador}+ *{num2}+ '=' + *{resultado}"></label>
                  <p></p>
                  <p class="text-center"><input type="submit" value="Calcular"/> <input type="reset" value="Limpiar"/></p>
                  </form>
